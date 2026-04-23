@@ -6,28 +6,28 @@ const networkingItems = [
     role: "Director",
     title: "The Visionary",
     description: "Connect with directors who don't just call shots—they craft cinematic universes. Find your next creative lead or mentor.",
-    image: "/assets/director.png",
+    image: "https://iili.io/B4gP4oP.png",
     accent: "from-blue-500/20"
   },
   {
     role: "Actor",
     title: "The Soul",
     description: "Discover performers who bring scripts to life with raw intensity and depth. Your lead role is waiting to be cast.",
-    image: "/assets/actor.png",
+    image: "https://iili.io/B4gPlFs.png",
     accent: "from-red-500/20"
   },
   {
     role: "Singer",
     title: "The Voice",
     description: "Collaborate with rockstars and vocalists who command the stage and your emotions. Find the perfect harmony.",
-    image: "/assets/rockstar.png",
+    image: "https://iili.io/B4giT0u.png",
     accent: "from-purple-500/20"
   },
   {
     role: "Editor",
     title: "The Architect",
     description: "Meet the masters of pacing and rhythm. Editors who turn raw footage into seamless cinematic poetry.",
-    image: "/assets/editor.png",
+    image: "https://iili.io/B4giuUb.png",
     accent: "from-emerald-500/20"
   }
 ];
@@ -166,13 +166,13 @@ export default function SearchSection() {
         <div className="hidden sm:flex absolute pointer-events-none select-none items-start" style={{ left: '1rem', top: '50%', transform: 'translateY(-50%)' }}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', transform: 'rotate(25deg)' }}>
             <img
-              src="/assets/Filmstrip.png"
+              src="https://iili.io/B4gLaP1.png"
               alt=""
               className="opacity-50"
               style={{ height: '80vh', width: 'auto', objectFit: 'cover', display: 'block' }}
             />
             <img
-              src="/assets/Filmstrip.png"
+              src="https://iili.io/B4gLaP1.png"
               alt=""
               className="opacity-50"
               style={{ height: '80vh', width: 'auto', objectFit: 'cover', display: 'block', transform: 'scaleY(-1)', marginTop: '-14px' }}
@@ -184,13 +184,13 @@ export default function SearchSection() {
         <div className="hidden sm:flex absolute pointer-events-none select-none items-start" style={{ right: '2.5rem', top: '50%', transform: 'translateY(-50%)' }}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', transform: 'rotate(25deg)' }}>
             <img
-              src="/assets/Filmstrip.png"
+              src="https://iili.io/B4gLaP1.png"
               alt=""
               className="opacity-50"
               style={{ height: '80vh', width: 'auto', objectFit: 'cover', display: 'block' }}
             />
             <img
-              src="/assets/Filmstrip.png"
+              src="https://iili.io/B4gLaP1.png"
               alt=""
               className="opacity-50"
               style={{ height: '80vh', width: 'auto', objectFit: 'cover', display: 'block', transform: 'scaleY(-1)', marginTop: '-14px' }}
