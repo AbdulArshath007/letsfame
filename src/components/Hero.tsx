@@ -175,20 +175,39 @@ export default function Hero() {
           </AnimatePresence>
         </div>
 
-        {/* Form */}
+        {/* Form — desktop pill */}
         <motion.div
           {...fadeUp(0.4)}
-          className="w-full max-w-lg flex flex-col sm:flex-row gap-3 sm:gap-0 sm:liquid-glass sm:rounded-full sm:p-2 sm:items-center"
+          className="hidden sm:flex w-full max-w-lg liquid-glass rounded-full p-2 items-center"
         >
           <input
             type="email"
             placeholder="Email address"
-            className="w-full liquid-glass sm:liquid-glass-none flex-grow bg-transparent border-none outline-none px-5 py-3.5 sm:py-0 sm:px-6 text-sm text-foreground focus:outline-none placeholder:text-zinc-500 rounded-full sm:rounded-none"
+            className="flex-grow bg-transparent border-none outline-none px-6 text-sm text-foreground focus:outline-none placeholder:text-zinc-500"
+          />
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white text-black font-bold text-[10px] tracking-widest rounded-full px-10 py-3.5 uppercase transition-transform whitespace-nowrap"
+          >
+            Join our community
+          </motion.button>
+        </motion.div>
+
+        {/* Form — mobile stacked */}
+        <motion.div
+          {...fadeUp(0.4)}
+          className="flex sm:hidden w-full flex-col gap-3"
+        >
+          <input
+            type="email"
+            placeholder="Email address"
+            className="w-full liquid-glass rounded-full px-5 py-3.5 text-sm text-foreground bg-transparent border-none outline-none focus:outline-none placeholder:text-zinc-500"
           />
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full sm:w-auto bg-white text-black font-bold text-[10px] tracking-widest rounded-full px-8 py-3.5 uppercase transition-transform whitespace-nowrap"
+            className="w-full bg-white text-black font-bold text-[10px] tracking-widest rounded-full px-8 py-3.5 uppercase transition-transform"
           >
             Join our community
           </motion.button>
