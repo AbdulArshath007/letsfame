@@ -142,7 +142,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Content Rotation Container */}
-        <div className="min-h-[260px] sm:min-h-[320px] md:min-h-[380px] flex flex-col items-center justify-center mb-8 sm:mb-12">
+        <div className="w-full flex flex-col items-center justify-center mb-8 sm:mb-12">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
@@ -150,24 +150,24 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col items-center"
+              className="flex flex-col items-center w-full"
             >
-              <CinematicTyper 
+              <CinematicTyper
                 text={messages[index].title}
                 speed={50}
-                className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight leading-[1.05] mb-6 sm:mb-8 max-w-4xl min-h-[2.2em] md:min-h-[1.2em]"
+                className="text-[2rem] leading-[1.15] sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight mb-4 sm:mb-8 w-full"
               />
 
               <motion.p
                 initial={{ opacity: 0, filter: 'blur(10px)', y: 10 }}
                 animate={{ opacity: 0.8, filter: 'blur(0px)', y: 0 }}
                 exit={{ opacity: 0, filter: 'blur(10px)', y: -10 }}
-                transition={{ 
-                  duration: 1.2, 
-                  delay: 1.5, // Delay until title is mostly typed
-                  ease: [0.22, 1, 0.36, 1] 
+                transition={{
+                  duration: 1.2,
+                  delay: 1.5,
+                  ease: [0.22, 1, 0.36, 1]
                 }}
-                className="text-sm sm:text-lg md:text-xl text-[#F0F2F5] max-w-2xl leading-relaxed min-h-[3em] px-2 sm:px-0"
+                className="text-sm sm:text-lg md:text-xl text-[#F0F2F5] max-w-2xl leading-relaxed px-1 sm:px-0"
               >
                 {messages[index].subtitle}
               </motion.p>
@@ -176,19 +176,19 @@ export default function Hero() {
         </div>
 
         {/* Form */}
-        <motion.div 
+        <motion.div
           {...fadeUp(0.4)}
-          className="w-full max-w-lg liquid-glass rounded-full p-2 flex items-center"
+          className="w-full max-w-lg flex flex-col sm:flex-row gap-3 sm:gap-0 sm:liquid-glass sm:rounded-full sm:p-2 sm:items-center"
         >
-          <input 
-            type="email" 
-            placeholder="Email address" 
-            className="flex-grow bg-transparent border-none outline-none px-6 text-sm text-foreground focus:outline-none placeholder:text-zinc-500"
+          <input
+            type="email"
+            placeholder="Email address"
+            className="w-full liquid-glass sm:liquid-glass-none flex-grow bg-transparent border-none outline-none px-5 py-3.5 sm:py-0 sm:px-6 text-sm text-foreground focus:outline-none placeholder:text-zinc-500 rounded-full sm:rounded-none"
           />
           <motion.button
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            className="bg-white text-black font-bold text-[9px] sm:text-[10px] tracking-widest rounded-full px-6 sm:px-10 py-3 sm:py-3.5 uppercase transition-transform whitespace-nowrap"
+            className="w-full sm:w-auto bg-white text-black font-bold text-[10px] tracking-widest rounded-full px-8 py-3.5 uppercase transition-transform whitespace-nowrap"
           >
             Join our community
           </motion.button>
