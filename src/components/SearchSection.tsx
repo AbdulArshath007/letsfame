@@ -76,9 +76,10 @@ function CharacterSpotlight({ item, index }: CharacterSpotlightProps) {
             {/* Spotlight Glow */}
             <div className={`absolute w-[140%] h-[140%] bg-gradient-to-tr ${item.accent} to-transparent rounded-full blur-[100px] opacity-40 mix-blend-screen animate-pulse`} />
             
-            <img 
-              src={item.image} 
+            <img
+              src={item.image}
               alt={item.role}
+              referrerPolicy="no-referrer"
               className={`w-full h-full object-contain drop-shadow-[0_100px_180px_rgba(0,0,0,0.95)] filter drop-shadow-[0_0_80px_rgba(255,255,255,0.1)]`}
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
@@ -168,12 +169,14 @@ export default function SearchSection() {
             <img
               src="https://iili.io/B4gLaP1.png"
               alt=""
+              referrerPolicy="no-referrer"
               className="opacity-50"
               style={{ height: '80vh', width: 'auto', objectFit: 'cover', display: 'block' }}
             />
             <img
               src="https://iili.io/B4gLaP1.png"
               alt=""
+              referrerPolicy="no-referrer"
               className="opacity-50"
               style={{ height: '80vh', width: 'auto', objectFit: 'cover', display: 'block', transform: 'scaleY(-1)', marginTop: '-14px' }}
             />
@@ -186,12 +189,14 @@ export default function SearchSection() {
             <img
               src="https://iili.io/B4gLaP1.png"
               alt=""
+              referrerPolicy="no-referrer"
               className="opacity-50"
               style={{ height: '80vh', width: 'auto', objectFit: 'cover', display: 'block' }}
             />
             <img
               src="https://iili.io/B4gLaP1.png"
               alt=""
+              referrerPolicy="no-referrer"
               className="opacity-50"
               style={{ height: '80vh', width: 'auto', objectFit: 'cover', display: 'block', transform: 'scaleY(-1)', marginTop: '-14px' }}
             />

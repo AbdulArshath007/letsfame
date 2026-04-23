@@ -24,7 +24,7 @@ export default function App() {
       </AnimatePresence>
 
       <div
-        className="relative min-h-screen selection:bg-foreground selection:text-background"
+        className="relative min-h-screen overflow-x-hidden selection:bg-foreground selection:text-background"
         style={{ opacity: isLoading ? 0 : 1, transition: 'opacity 0.5s ease-out' }}
       >
         <ParticlesCanvas />
